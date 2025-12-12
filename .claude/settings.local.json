@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet build:*)",
+      "Bash(npm create:*)",
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: 다중 Ollama 서버 라우터 및 웹 테스터 구현\n\n- ASP.NET Core 8.0 기반 API 라우터 구현\n- Ollama API 완벽 호환 (/api/chat, /api/generate)\n- Least Connections 방식 서버 선택 (가장 여유 있는 서버 우선)\n- 서버당 동시 요청 제한 (SemaphoreSlim 기반)\n- 스트리밍 응답 지원 (청크 단위 즉시 전송)\n- 에러 응답 투명 전달\n- CORS 지원\n\n웹 테스터 (Vite + React):\n- Host/Port/Model 설정\n- 프롬프트 입력 (글자수 표시)\n- 스트리밍 응답 표시\n- 통계: TTFT, Tokens, TPS\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: 웹 UI 다크 모드 개선 및 문서 추가\n\n웹 테스터 UI 개선:\n- GitHub 스타일 다크 테마 적용\n- localStorage로 설정 자동 저장\n- 복사 버튼, 클리어 버튼 추가\n- 타이핑 커서 애니메이션\n- 응답 자동 스크롤\n- 반응형 디자인\n\n문서 추가:\n- 01_fundamental.md: 기본 개념\n- 02_how_to_use.md: 사용 방법\n- 03_api_detail.md: API 상세\n- 04_architecture.md: 아키텍처\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git commit:*)"
+    ]
+  }
+}

@@ -6,5 +6,5 @@ services:
       dockerfile: Dockerfile
     container_name: ollama-router-web
     ports:
-      - "8080:80"
+      - "5800:80"
     restart: unless-stopped
