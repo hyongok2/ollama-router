@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1f6feb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Central router node -->
+  <circle cx="50" cy="50" r="20" fill="url(#grad)"/>
+  <circle cx="50" cy="50" r="12" fill="#0d1117"/>
+  <circle cx="50" cy="50" r="6" fill="url(#grad)"/>
+  <!-- Connection lines -->
+  <line x1="50" y1="30" x2="50" y2="12" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="50" y1="70" x2="50" y2="88" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="30" y1="50" x2="12" y2="50" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <line x1="70" y1="50" x2="88" y2="50" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+  <!-- Server nodes -->
+  <circle cx="50" cy="8" r="6" fill="#238636"/>
+  <circle cx="50" cy="92" r="6" fill="#238636"/>
+  <circle cx="8" cy="50" r="6" fill="#238636"/>
+  <circle cx="92" cy="50" r="6" fill="#238636"/>
+</svg>

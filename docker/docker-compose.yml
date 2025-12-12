@@ -1,0 +1,14 @@
+services:
+  ollama-router:
+    image: ollama-router:v0.0.1
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: ollama-router
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - Ollama__Servers__0=http://host.docker.internal:11434
+      - Ollama__MaxConcurrentPerServer=2
+    restart: unless-stopped
