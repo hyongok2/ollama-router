@@ -370,11 +370,7 @@
   }
 
   .config-row {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .config-row .input-group:last-child {
-    grid-column: span 2;
+    grid-template-columns: 1fr;
   }
 
   .stats-row {

@@ -1,5 +1,6 @@
 services:
   ollama-router:
+    platform: linux/arm64
     image: ollama-router:v0.0.1
     build:
       context: ..
