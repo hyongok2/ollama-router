@@ -1,7 +1,6 @@
 services:
   ollama-router-web:
     image: ollama-router-web:v0.0.2
-    platform: linux/arm64
     build:
       context: .
       dockerfile: Dockerfile
